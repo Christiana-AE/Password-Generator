@@ -13,3 +13,7 @@ The application will run on the browser and will feature dynamically updated HTM
 The MIT license has been used 
 
 ## Deployment Link
+
+## Screenshot
+
+

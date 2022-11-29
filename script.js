@@ -89,11 +89,11 @@ var upperCasedCharacters = [
 ];
 
 // Function to prompt user for password options
+
+var passwordLength = prompt("Choose password length. Minimum of 10 characters and maximum of 64");
+
 function getPasswordOptions() {
-
-  // Ask user for password length
-  var passwordLength = prompt("Choose password length. Minimum of 10 characters and maximum of 64");
-
+  
   //Validate password length
 
   var passwordTries = 3;

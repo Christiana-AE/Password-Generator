@@ -14,6 +14,8 @@ The MIT license has been used
 
 ## Deployment Link
 
-## Screenshot
+## Screenshot Link
+https://github.com/Christiana-AE/Password-Generator/blob/main/Screenshot%202022-11-29%20at%2017.39.09.png
+
 
 

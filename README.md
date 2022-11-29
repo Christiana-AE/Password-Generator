@@ -13,6 +13,7 @@ The application will run on the browser and will feature dynamically updated HTM
 The MIT license has been used 
 
 ## Deployment Link
+https://christiana-ae.github.io/Password-Generator/
 
 ## Screenshot Link
 https://github.com/Christiana-AE/Password-Generator/blob/main/Screenshot%202022-11-29%20at%2017.39.09.png

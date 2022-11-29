@@ -126,8 +126,7 @@ function getPasswordOptions() {
     return passwordLength;
 }
 
-// call function to prompt user for password options at start of the password generation 
-getPasswordOptions();
+
 
 //-----------------------------------------------------------------------------------------------------------
 
@@ -185,3 +184,6 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
+
+// call function to prompt user for password options at start of the password generation 
+getPasswordOptions();

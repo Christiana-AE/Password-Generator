@@ -90,13 +90,27 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+
+  // Ask user for password length
   var passwordLength = prompt("Choose password length. Minimum of 10 characters and maximum of 64");
 
   //Validate password length
-  if (passwordLength < 10 || passwordLength > 64){
-    alert("Password length must be between 10 and 64 characters only!");
+
+  var passwordTries = 3;
+
+  while(passwordTries > 0){
+    if (passwordLength >= 10 && passwordLength <= 64){
+      alert("You have selected a password with " + passwordLength + " characters");
+      break;
+    }
+    else if (passwordLength < 10 || passwordLength > 64){
+      alert("Password length must be between 10 and 64 characters only!");
+      prompt("Choose password length. Minimum of 10 characters and maximum of 64");
+      passwordTries--;
+    }
   }
 
+    // Ask user for password character type
   var charType = prompt("Choose password character type from: lowercase, uppercase, numeric, special characters");
 
    // Validate character type and use consistent casing for validation
@@ -108,16 +122,20 @@ function getPasswordOptions() {
     else {
     alert("Enter a valid password type between lowercase, uppercase, numeric or special characters!");
   }
-
+    return passwordLength;
 }
 
-
+// call function to prompt user for password options at start of the password generation 
 getPasswordOptions();
+
+//-----------------------------------------------------------------------------------------------------------
 
 // Function for getting a random element from an array
 function getRandom(arr) {
   var element = arr[Math.floor(Math.random()* arr.length)];
 }
+
+//-----------------------------------------------------------------------------------------------------------
 
 // Function to generate password with user input
 function generatePassword() {

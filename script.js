@@ -155,6 +155,16 @@ function generatePassword(passwordLength, charType) {
       passwordGenerated += getRandom(upperCasedCharacters);
     }
   }
+  else if (charType.toLowerCase() === "numeric"){
+    for (var i = 0; i < passwordLength; i++){
+      passwordGenerated += getRandom(numericCharacters);
+    }
+  }
+  else if (charType.toLowerCase() === "special characters"){
+    for (var i = 0; i < passwordLength; i++){
+      passwordGenerated += getRandom(specialCharacters);
+    }
+  }
  
   return passwordGenerated;
 
